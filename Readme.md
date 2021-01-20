@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Владислав](https://up.htmlacademy.ru/htmlcss/30/user/1484649).
-* Наставник: `Неизвестно`.
+* Наставник: [Артем Таланов] (https://htmlacademy.ru/profile/talanovartem).
 
 ---
 
