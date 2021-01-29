@@ -29,23 +29,24 @@
         <form method="GET" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Стоимость:</legend>
-            <input type="range" name="price">
+            <input type="range" name="price"><br>
+            от <input type="number" name="price_from"> до <input type="number" name="price_to">
           </fieldset>
 
           <fieldset>
             <legend>Сетка:</legend>
             <ul>
               <li>
-                <input type="radio" name="setka" value="adaptivnaya" id="filter-adaptivnaya" checked>
-                <label for="filter-adaptivnaya">Адаптивная</label>
+                <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+                <label for="filter-adaptive">Адаптивная</label>
               </li>
               <li>
-                <input type="radio" name="setka" value="ficsirovannaya" id="filter-ficsirovannaya">
-                <label for="filter-ficsirovannaya">Фиксированная</label>
+                <input type="radio" name="grid" value="fixed" id="filter-fixed">
+                <label for="filter-fixed">Фиксированная</label>
               </li>
               <li>
-                <input type="radio" name="setka" value="rezinovaya" id="filter-rezinovaya">
-                <label for="filter-rezinovaya">Резиновая</label>
+                <input type="radio" name="grid" value="rubber" id="filter-rubber">
+                <label for="filter-rubber">Резиновая</label>
               </li>
             </ul>
           </fieldset>
@@ -54,97 +55,137 @@
             <legend>Особенности:</legend>
             <ul>
               <li>
-                <input type="checkbox" name="slaider" id="filter-slaider">
-                <label for="filter-slaider">Слайдер</label>
+                <input type="checkbox" name="slider" id="filter-slider" checked>
+                <label for="filter-slider">Слайдер</label>
               </li>
               <li>
-                <input type="checkbox" name="preimuchestva" id="filter-preimuchestva">
-                <label for="filter-preimuchestva">Блок преимуществ</label>
+                <input type="checkbox" name="advantages" id="filter-advantages">
+                <label for="filter-advantages">Блок преимуществ</label>
               </li>
               <li>
-                <input type="checkbox" name="news" id="filter-news">
+                <input type="checkbox" name="news" id="filter-news" checked>
                 <label for="filter-news">Новости</label>
               </li>
               <li>
-                <input type="checkbox" name="galary" id="filter-galary">
-                <label for="filter-galary">Галерея</label>
+                <input type="checkbox" name="gallery" id="filter-gallery">
+                <label for="filter-gallery">Галерея</label>
               </li>
               <li>
-                <input type="checkbox" name="korzina" id="filter-korzina">
-                <label for="filter-korzina">Корзина</label>
+                <input type="checkbox" name="basket " id="filter-basket ">
+                <label for="filter-basket ">Корзина</label>
               </li>
             </ul>
           </fieldset>
           <button type="submit">Показать</button>
         </form>
+      </section>
 
-        <section>
-          <p>Сортировать:</p>
-          <button type="button">по цене</button>
-          <button type="button">по типу</button>
-          <button type="button">по названию</button>
-        </section>
+      <section>
+        <p>Сортировать:</p>
+        <button type="button">по цене</button>
+        <button type="button">по типу</button>
+        <button type="button">по названию</button>
+        <button type="button"></button>
+        <button type="button"></button>
+      </section>
 
-        <section>
-          <h2>Список шаблонов</h2>
-          <ul>
-            <li>
-              <a href="#">
-                <img src="" alt="Sedona">
-              </a>
-              <div>
-                <h3>Sedona</h3>
-                <p>Информационный сайт для туристов</p>
-                <button type="button">9 900₽</button>
-              </div>
-            </li>
+      <section>
+        <h2>Список шаблонов</h2>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="" alt="Sedona">
+            </a>
+            <div>
+              <h3>Sedona</h3>
+              <p>Информационный сайт для туристов</p>
+              <button type="button">9 900₽</button>
+            </div>
+          </li>
 
-            <li>
-              <a href="#">
-                <img src="" alt="Pink">
-              </a>
-            </li>
+          <li>
+            <a href="#">
+              <img src="" alt="Pink">
+            </a>
+            <div>
+              <h3>Pink App</h3>
+              <p>Продуктовый лендинг приложения для iOS и Android</p>
+              <button type="button">9 900₽</button>
+            </div>
+          </li>
 
-            <li>
-              <a href="#">
-                <img src="" alt="Borodinski">
-              </a>
-            </li>
+          <li>
+            <a href="#">
+              <img src="" alt="Borodinski">
+            </a>
+            <div>
+              <h3>Barbershop</h3>
+              <p>Сайт салона красоты. Для мужчин, да.</p>
+              <button type="button">9 900₽</button>
+            </div>
+          </li>
 
-            <li>
-              <a href="#">
-                <img src="" alt="Mishka">
-              </a>
-            </li>
+          <li>
+            <a href="#">
+              <img src="" alt="Mishka">
+            </a>
+            <div>
+              <h3>MISHKA</h3>
+              <p>Интернет-магазин вязаных игрушек</p>
+              <button type="button">9 900₽</button>
+            </div>
+          </li>
 
-            <li>
-              <a href="#">
-                <img src="" alt="A+">
-              </a>
-            </li>
+          <li>
+            <a href="#">
+              <img src="" alt="A+">
+            </a>
+            <div>
+              <h3>A Plus</h3>
+              <p>Лендинг курсов повышения квалификации</p>
+              <button type="button">9 900₽</button>
+            </div>
+          </li>
 
-            <li>
-              <a href="#">
-                <img src="" alt="Крафтовый квас">
-              </a>
-            </li>
-          </ul>
+          <li>
+            <a href="#">
+              <img src="" alt="Крафтовый квас">
+            </a>
+            <div>
+              <h3>КВАСТ</h3>
+              <p>Промо-сайт производителя крафтового кваса</p>
+              <button type="button">9 900₽</button>
+            </div>
+          </li>
+        </ul>
 
-          <ul>
-            <li>
-              <a>1</a>
-            </li>
-            <li>
-              <a href="">2</a>
-            </li>
-            <li>
-              <a href="">3</a>
-            </li>
-            <li>
-              <a href="">Следующая</a>
-            </li>
-          </ul>
-        </section>
+        <ul>
+          <li>
+            <a>1</a>
+          </li>
+          <li>
+            <a href="">2</a>
+          </li>
+          <li>
+            <a href="">3</a>
+          </li>
+          <li>
+            <a href="">Следующая</a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Как до нас добраться</h2>
+        <img src="" alt="Карта">
+        <div>
+          <p>NЁRDS DESIGN STUDIO</p>
+          <p>191186, Санкт-Петербург, <br>
+            ул. Б. Конюшенная, д. 19/8
+          <br>
+          <a href="+78122757575">тел. +7 (812) 275-75-75</a></p>
+          <a href="">Напишите нам</a>
+        </div>
       </section>
     </main>
 
