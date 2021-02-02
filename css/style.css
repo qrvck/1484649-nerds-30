@@ -1,0 +1,240 @@
+/* Fonts */
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/roboto.woff2) format(woff2),
+  url(../fonts/roboto.woff) format(woff);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/robotobold.woff2) format(woff2),
+  url(../fonts/robotobold.woff) format(woff);
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/robotomedium.woff2) format(woff2),
+  url(../fonts/robotomedium.woff) format(woff);
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Variables */
+
+:root {
+  --black: #000000;
+  --light-black: #283136;
+  --white: #FFFFFF;
+  --gray: #444444;
+  --light-gray: #666666;
+  --dirty-white: #EEEEEE;
+
+  --light-red: #FB565A;
+  --red: #E74246;
+  --dark-red: #D7373B;
+
+  --light-green: #00CA74;
+  --green: #00BC6C;
+  --dark-green: #00AA62;
+
+  --light-yellow: #EFC84A;
+  --yellow: #EAB534;
+  --dark-yellow: #E5A722;
+}
+
+/* Global */
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--black);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Main navigation */
+
+.main-navigation {
+  line-height: 30px;
+  font-weight: 700;
+  background-color: var(--dirty-white);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.main-navigation a {
+  color: var(--black);
+}
+
+.main-navigation a:hover {
+  color: var(--light-red);
+}
+
+.main-navigation a:active {
+  color: var(--black);
+  opacity: 0.3;
+}
+
+/* Sliders */
+
+.slides-list {
+  list-style: none;
+}
+
+.slides-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500px;
+}
+
+.slider-subtitle {
+  color: var(--light-black);
+}
+
+/* Services */
+
+.services-list {
+  list-style: none;
+}
+
+.services-list h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.services-list p {
+  color: var(--light-black);
+}
+
+/* About studio */
+
+.studio-title {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.studio-subtitle {
+  color: var(--light-black);
+}
+
+.subtitle-orders {
+  font-weight: 700;
+}
+
+.studio-information p {
+  font-weight: 700;
+}
+
+.studio-list-second {
+  list-style-type: none;
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: 700;
+}
+
+.percent-info {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--light-black);
+}
+
+/* Partners */
+
+.partners-list {
+  list-style: none;
+}
+
+/* map */
+
+.contact-phone {
+  color: inherit;
+}
+
+.map-info-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.map-info-subtitle {
+  line-height: 18px;
+  color: var(--light-gray);
+}
+
+/* Main footer */
+
+.social-list {
+  list-style: none;
+}
+
+.discount-title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.discount-subtitle {
+  line-height: 22px;
+  color: var(--gray);
+}
+
+/* Button */
+
+.button {
+  font-size: inherit;
+  line-height: 18px;
+  font-weight: 500;
+  background-color: var(--light-red);
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.button-apps {
+  background-color: var(--light-green);
+}
+
+.button-presentations {
+  background-color: var(--light-yellow);
+}
+
+.button:hover {
+  background-color: var(--red);
+}
+
+.button-apps:hover {
+  background-color: var(--green);
+}
+
+.button-presentations:hover {
+  background-color: var(--yellow);
+}
+
+.button:active {
+  background-color: var(--dark-red);
+}
+
+.button-apps:active {
+  background-color: var(--dark-green);
+}
+
+.button-presentations:active {
+  background-color: var(--dark-yellow);
+}
+
+
