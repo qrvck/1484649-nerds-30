@@ -71,6 +71,10 @@ a {
   background-color: var(--dirty-white);
 }
 
+.main-header-logo:hover {
+  
+}
+
 .menu {
   list-style: none;
 }
@@ -165,6 +169,19 @@ a {
 .partners-list {
   list-style: none;
 }
+
+.partners-item {
+  opacity: 0.2;
+}
+
+.partners-item:hover {
+  opacity: 1;
+}
+
+.partners-item:active {
+  opacity: 0.1;
+}
+
 
 /* map */
 
