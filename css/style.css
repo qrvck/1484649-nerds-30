@@ -71,19 +71,19 @@ a {
   background-color: var(--dirty-white);
 }
 
-.site-navigation {
+.menu {
   list-style: none;
 }
 
-.main-navigation a {
+.menu-link {
   color: var(--black);
 }
 
-.main-navigation a:hover {
+.menu-link:hover {
   color: var(--light-red);
 }
 
-.main-navigation a:active {
+.menu-link:active {
   color: var(--black);
   opacity: 0.3;
 }
@@ -124,7 +124,7 @@ a {
 
 .studio-title {
   font-size: 45px;
-  line-height: 45px;
+  line-height: 1;
   font-weight: 500;
 }
 
@@ -132,7 +132,7 @@ a {
   color: var(--light-black);
 }
 
-.subtitle-orders {
+.orders {
   font-weight: 700;
 }
 
@@ -140,10 +140,16 @@ a {
   font-weight: 700;
 }
 
-.studio-list-second {
+.statistics-list {
   list-style-type: none;
   font-size: 45px;
   line-height: 64px;
+  font-weight: 700;
+}
+
+.percent {
+  font-size: 26px;
+  line-height: 40px;
   font-weight: 700;
 }
 
@@ -205,36 +211,34 @@ a {
   text-transform: uppercase;
 }
 
-.button-apps {
-  background-color: var(--light-green);
-}
-
-.button-presentations {
-  background-color: var(--light-yellow);
-}
-
 .button:hover {
   background-color: var(--red);
-}
-
-.button-apps:hover {
-  background-color: var(--green);
-}
-
-.button-presentations:hover {
-  background-color: var(--yellow);
 }
 
 .button:active {
   background-color: var(--dark-red);
 }
 
-.button-apps:active {
+.button-green {
+  background-color: var(--light-green);
+}
+
+.button-green:hover {
+  background-color: var(--green);
+}
+
+.button-green:active {
   background-color: var(--dark-green);
 }
 
-.button-presentations:active {
-  background-color: var(--dark-yellow);
+.button-yellow {
+  background-color: var(--light-yellow);
 }
 
+.button-yellow:hover {
+  background-color: var(--yellow);
+}
 
+.button-yellow:active {
+  background-color: var(--dark-yellow);
+}
