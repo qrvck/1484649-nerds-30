@@ -34,6 +34,9 @@
   --light-gray: #666666;
   --dirty-white: #EEEEEE;
 
+  --middle-gray: #DFDFDF;
+  --dirty-gray: #D5D5D5;
+
   --light-red: #FB565A;
   --red: #E74246;
   --dark-red: #D7373B;
@@ -52,7 +55,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Roboto", "Arial" sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -90,6 +93,8 @@ a {
   color: var(--black);
   opacity: 0.3;
 }
+
+/* INDEX */
 
 /* Sliders */
 
@@ -182,6 +187,80 @@ a {
 }
 
 
+/* CATALOG */
+
+.page-title {
+  font-size: 55px;
+  line-height: 1;
+  font-weight: 500;
+  background-color: var(--dirty-white);
+}
+
+/* Filters */
+
+.price {
+  background-color: var(--dirty-white);
+  border: none;
+}
+
+.filter legend {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.filter-list {
+  list-style: none;
+  line-height: 19px;
+  color: var(--light-black);
+}
+
+/* Sort */
+
+.sort p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sort button {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+/* Templates */
+
+.template-description {
+  background-color: var(--dirty-white);
+}
+
+.template-list {
+  list-style: none;
+}
+
+.template-description h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.template-description p {
+  line-height: 18px;
+  color: var(--light-gray);
+}
+
+/* Pagination */
+
+.pagination-list {
+  line-height: 18px;
+  font-weight: 500;
+  list-style: none;
+}
+
 /* map */
 
 .contact-phone {
@@ -257,4 +336,23 @@ a {
 
 .button-yellow:active {
   background-color: var(--dark-yellow);
+}
+
+.filter-button {
+  border: none;
+  background-color: var(--dirty-white);
+  color: var(--black);
+}
+
+.filter-button:hover {
+  background-color: var(--middle-gray);
+}
+
+.filter-button:active {
+  background-color: var(--dirty-gray);
+  opacity: 0.3;
+}
+
+.buy-button {
+  border: none;
 }
