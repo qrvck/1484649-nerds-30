@@ -75,15 +75,18 @@ a {
   list-style: none;
 }
 
-.menu-link {
+.menu-link,
+.basket-link {
   color: var(--black);
 }
 
-.menu-link:hover {
+.menu-link:hover,
+.basket-link:hover {
   color: var(--light-red);
 }
 
-.menu-link:active {
+.menu-link:active,
+.basket-link:active {
   color: var(--black);
   opacity: 0.3;
 }
