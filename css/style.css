@@ -72,6 +72,7 @@ a {
   line-height: 30px;
   font-weight: 700;
   background-color: var(--dirty-white);
+  text-transform: uppercase;
 }
 
 .menu {
@@ -218,17 +219,19 @@ a {
 
 /* Sort */
 
+.sort {
+  text-transform: uppercase;
+}
+
 .sort p {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 .sort button {
   font-size: 14px;
   line-height: 18px;
-  text-transform: uppercase;
 }
 
 /* Templates */
@@ -259,7 +262,10 @@ a {
   line-height: 18px;
   font-weight: 500;
   list-style: none;
+  text-transform: uppercase;
 }
+
+/* OTHER */
 
 /* map */
 
@@ -295,7 +301,7 @@ a {
   color: var(--gray);
 }
 
-/* Button */
+/* BUTTON */
 
 .button {
   font-size: inherit;
@@ -306,12 +312,15 @@ a {
   text-transform: uppercase;
 }
 
+/* Services button */
+
 .button:hover {
   background-color: var(--red);
 }
 
 .button:active {
   background-color: var(--dark-red);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .button-green {
@@ -338,6 +347,8 @@ a {
   background-color: var(--dark-yellow);
 }
 
+/* Filter button */
+
 .filter-button {
   border: none;
   background-color: var(--dirty-white);
@@ -350,9 +361,33 @@ a {
 
 .filter-button:active {
   background-color: var(--dirty-gray);
-  opacity: 0.3;
 }
+
+/* Cost, buy button */
 
 .buy-button {
   border: none;
 }
+
+/* Pagination button */
+
+.pagination-item a {
+  background-color: var(--dirty-white);
+  color: var(--black);
+}
+
+.pagination-item a:hover {
+  background-color: var(--middle-gray);
+}
+
+.pagination-item a:active {
+  background-color: var(--dirty-gray);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.pagination-item-current a {
+  background-color: var(--white);
+  border: 3px solid #DBDBDB;
+}
+
+
