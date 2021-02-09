@@ -310,6 +310,7 @@ a {
 .button:active {
   background-color: var(--dark-red);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-green {
@@ -374,6 +375,10 @@ a {
 
 .buy-button {
   border: none;
+}
+
+.buy-button:active {
+  color: rgba(255, 255, 255, 1);
 }
 
 /* Pagination button */
