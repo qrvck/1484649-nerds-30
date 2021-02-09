@@ -119,13 +119,13 @@ a {
   list-style: none;
 }
 
-.services-list h3 {
+.service-title {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
 }
 
-.services-list p {
+.service-text {
   color: var(--light-black);
 }
 
@@ -145,7 +145,7 @@ a {
   font-weight: 700;
 }
 
-.studio-information p {
+.studio-text {
   font-weight: 700;
 }
 
@@ -204,8 +204,8 @@ a {
   border: none;
 }
 
-.filter legend {
-  font-size: 24px;
+.filter-title {
+  font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
@@ -219,19 +219,11 @@ a {
 
 /* Sort */
 
-.sort {
-  text-transform: uppercase;
-}
-
-.sort p {
+.sort-text {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
-}
-
-.sort button {
-  font-size: 14px;
-  line-height: 18px;
+  text-transform: uppercase;
 }
 
 /* Templates */
@@ -244,14 +236,14 @@ a {
   list-style: none;
 }
 
-.template-description h3 {
+.template-title {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.template-description p {
+.template-text {
   line-height: 18px;
   color: var(--light-gray);
 }
@@ -259,10 +251,7 @@ a {
 /* Pagination */
 
 .pagination-list {
-  line-height: 18px;
-  font-weight: 500;
   list-style: none;
-  text-transform: uppercase;
 }
 
 /* OTHER */
@@ -361,6 +350,24 @@ a {
 
 .filter-button:active {
   background-color: var(--dirty-gray);
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* Sort button */
+
+.sort-button {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+
+.sort-button:hover {
+  opacity: 0.6;
+}
+
+.sort-button:active {
+  opacity: 1;
 }
 
 /* Cost, buy button */
@@ -371,23 +378,22 @@ a {
 
 /* Pagination button */
 
-.pagination-item a {
+.pagination-button {
   background-color: var(--dirty-white);
   color: var(--black);
 }
 
-.pagination-item a:hover {
+.pagination-button:hover {
   background-color: var(--middle-gray);
 }
 
-.pagination-item a:active {
+.pagination-button:active {
   background-color: var(--dirty-gray);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: rgba(0, 0, 0, 0.3);
 }
 
-.pagination-item-current a {
+.pagination-button-current {
   background-color: var(--white);
   border: 3px solid #DBDBDB;
 }
-
-
