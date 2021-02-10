@@ -52,7 +52,7 @@
 
 /* Global */
 
-body {
+.page-body {
   padding: 0;
   margin: 0;
   font-family: "Roboto", "Arial", sans-serif;
@@ -60,10 +60,20 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: var(--black);
+
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }
 
 a {
   text-decoration: none;
+}
+
+/* Main header */
+
+.main-header {
+  background-color: var(--dirty-white);
 }
 
 /* Main navigation */
@@ -71,12 +81,24 @@ a {
 .main-navigation {
   line-height: 30px;
   font-weight: 700;
-  background-color: var(--dirty-white);
   text-transform: uppercase;
+
+  width: 1157px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .menu {
   list-style: none;
+  justify-self: center;
+  margin: 0;
+  padding: 0;
+}
+
+.basket-link {
+  justify-self: end;
 }
 
 .menu-link,
