@@ -77,6 +77,11 @@ a {
   display: none;
 }
 
+.container {
+  width: 1157px;
+  margin: 0 auto;
+}
+
 /* Main header */
 
 .main-header {
@@ -89,9 +94,6 @@ a {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
-
-  width: 1157px;
-  margin: 0 auto;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -126,22 +128,10 @@ a {
 
 /* INDEX */
 
-/* Main */
-
-.container {
-  width: 1157px;
-  margin: 0 auto;
-}
-
 /* Sliders */
 
 .slider-container {
   background-color: var(--dirty-white);
-}
-
-.slides {
-  width: 1157px;
-  margin: 0 auto;
 }
 
 .slides-list {
@@ -351,9 +341,6 @@ a {
 /* Main footer */
 
 .footer-social {
-  width: 1157px;
-  margin: 0 auto;
-
   display: grid;
   grid-template-columns: 1fr 2fr;
   column-gap: 40px;
