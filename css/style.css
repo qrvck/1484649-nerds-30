@@ -250,14 +250,35 @@ a {
 
 /* CATALOG */
 
+.basic-content {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  grid-template-rows:
+    auto
+    auto;
+  column-gap: 140px;
+}
+
+/* Main title */
+
+.title-bar {
+  background-color: var(--dirty-white);
+}
+
 .page-title {
   font-size: 55px;
   line-height: 1;
   font-weight: 500;
-  background-color: var(--dirty-white);
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 /* Filters */
+
+.filters {
+  grid-row: 1 / -1;
+}
 
 .price {
   background-color: var(--dirty-white);
