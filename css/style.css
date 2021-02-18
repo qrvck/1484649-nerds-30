@@ -101,7 +101,7 @@ a {
 
 .menu {
   list-style: none;
-  justify-self: center;
+
   margin: 0;
   padding: 0;
 }
@@ -160,7 +160,8 @@ a {
   padding: 0;
 
   display: grid;
-  grid-template-columns: 400px 400px 400px;
+  grid-template-columns: auto auto auto;
+  column-gap: 40px;
 }
 
 .service-title {
@@ -171,6 +172,7 @@ a {
 
 .service-text {
   color: var(--light-black);
+  width: 260px;
 }
 
 /* About studio */
@@ -315,6 +317,8 @@ a {
 
 .template-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .template-title {
