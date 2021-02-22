@@ -34,6 +34,8 @@
   --light-gray: #666666;
   --dirty-white: #EEEEEE;
   --extra-gray: #E1E1E1;
+  --extra-light-gray: #4D4D4D;
+
 
   --middle-gray: #DFDFDF;
   --dirty-gray: #D5D5D5;
@@ -368,6 +370,7 @@ a {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 16px;
 }
 
 .filter-list {
@@ -376,12 +379,115 @@ a {
   color: var(--light-black);
   padding: 0;
   margin: 0;
+
 }
 
 .filter-part {
+  border: none;
   padding: 0;
   margin: 0;
-  border: none;
+}
+
+.filter-radio {
+  padding-bottom: 27px;
+}
+
+.filter-checkbox {
+  padding-bottom: 30px;
+}
+
+.filter-item {
+  margin-bottom: 20px;
+  margin-left: 36px;
+}
+
+.filter-list label {
+  position: relative;
+
+}
+
+/* radiobox */
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: -4px;
+  width: 17px;
+  height: 17px;
+  border: 4px solid var(--extra-light-gray);
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.filter-input-radio:hover + label::before {
+  opacity: 1;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -28px;
+  top: 4px;
+  width: 9px;
+  height: 9px;
+  background-color: var(--extra-light-gray);
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.filter-input-radio:checked:hover + label::after {
+  opacity: 1;
+}
+
+/* checkbox */
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: -3px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.4;
+}
+
+.filter-input-checkbox:hover + label::before {
+  opacity: 1;
+}
+
+.filter-input-checkbox:checked + label::before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: -3px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.4;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -32px;
+  top: -1px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox/check.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.4;
+}
+
+.filter-input-checkbox:checked:hover + label::before,
+.filter-input-checkbox:checked:hover + label::after {
+  opacity: 1;
 }
 
 /* Sort */
@@ -549,6 +655,7 @@ a {
 /* Filter button */
 
 .filter-button {
+  width: 100%;
   border: none;
   background-color: var(--dirty-white);
   color: var(--black);
