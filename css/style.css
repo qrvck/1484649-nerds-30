@@ -33,6 +33,7 @@
   --gray: #444444;
   --light-gray: #666666;
   --dirty-white: #EEEEEE;
+  --extra-gray: #E1E1E1;
 
   --middle-gray: #DFDFDF;
   --dirty-gray: #D5D5D5;
@@ -73,8 +74,17 @@ a {
   text-decoration: none;
 }
 
-.hidden {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
@@ -93,26 +103,43 @@ a {
 
 .main-navigation {
   line-height: 30px;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
 
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 200px 1fr 200px;
 }
 
 .menu {
   list-style: none;
   margin: 0;
+  margin-top: 62px;
   padding: 0;
+  justify-self: center;
+
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.basket-link {
+.user-navigation {
+  max-width: 200px;
   justify-self: end;
+  margin-top: 62px;
+}
+
+.main-header-logo {
+  margin-top: 50px;
+  justify-self: start;
+  max-width: 200px;
 }
 
 .menu-link,
 .basket-link {
   color: var(--black);
+
+  display: block;
+  padding: 13px 0;
+  margin: 0 22px;
 }
 
 .menu-link:hover,
@@ -124,6 +151,32 @@ a {
 .basket-link:active {
   color: var(--black);
   opacity: 0.3;
+}
+
+.basket-link {
+  margin-right: 0;
+  padding-left: 40px;
+  position: relative;
+}
+
+.basket-link::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.on-page {
+  color: var(--black);
+  display: block;
+  padding: 13px 0;
+  margin: 0 22px;
+  border-bottom: 2px solid var(--light-red);
 }
 
 /* INDEX */
@@ -400,17 +453,29 @@ a {
 .social-list {
   list-style: none;
   padding: 0;
+  margin: 68px 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.discount {
+  margin: 75px 0;
 }
 
 .discount-title {
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
+  margin: 0;
 }
 
 .discount-subtitle {
   line-height: 22px;
   color: var(--gray);
+  margin: 0;
+  margin-top: 10px;
 }
 
 /* BUTTON */
@@ -524,4 +589,29 @@ a {
 .pagination-button-current {
   background-color: var(--white);
   border: 3px solid #DBDBDB;
+}
+
+/* Social link */
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 81px;
+  height: 81px;
+  background-color: var(--extra-gray);
+  border-radius: 50%;
+}
+
+.social-link:hover {
+  background-color: var(--red) ;
+}
+
+.social-link:active {
+  background-color: var(--dark-red) ;
+}
+
+.social-link:active path {
+  opacity: 0.3;
 }
