@@ -192,12 +192,14 @@ a {
 .slides-list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .slides-title {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500px;
+  margin: 0;
 }
 
 .slider-subtitle {
@@ -334,6 +336,7 @@ a {
     auto
     auto;
   column-gap: 140px;
+  margin-bottom: 60px;
 }
 
 /* Main title */
@@ -355,9 +358,6 @@ a {
 
 .filters {
   grid-row: 1 / -1;
-
-  outline: 5px solid rgba(0, 255, 255 , 0.3);
-  outline-offset: -5px;
 }
 
 .price {
@@ -509,7 +509,7 @@ a {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 55px;
+  margin-bottom: 25px;
 
   display: flex;
   flex-wrap: wrap;
@@ -540,7 +540,11 @@ a {
 /* Pagination */
 
 .pagination-list {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* OTHER */
@@ -606,7 +610,8 @@ a {
 /* BUTTON */
 
 .button {
-  padding: 17px 40px 15px;
+  display: inline-block;
+  padding: 17px 20px 15px;
   border-radius: 3px;
   font-size: inherit;
   line-height: 18px;
@@ -614,6 +619,8 @@ a {
   background-color: var(--light-red);
   color: var(--white);
   text-transform: uppercase;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 /* Services button */
@@ -700,6 +707,7 @@ a {
 /* Pagination button */
 
 .pagination-button {
+  margin-right: 11px;
   background-color: var(--dirty-white);
   color: var(--black);
 }
@@ -716,7 +724,11 @@ a {
 
 .pagination-button-current {
   background-color: var(--white);
-  border: 3px solid #DBDBDB;
+  box-shadow: inset 0 0 0 3px #DBDBDB;
+}
+
+.pagination-item:last-child .pagination-button {
+  width: 260px;
 }
 
 /* Social link */
