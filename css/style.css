@@ -516,10 +516,6 @@ a {
 
 /* Templates */
 
-.template-description {
-  background-color: var(--dirty-white);
-}
-
 .template-list {
   list-style: none;
   margin: 0;
@@ -528,16 +524,24 @@ a {
 
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .template-item {
   width: 360px;
-  margin-right: 40px;
+  margin-top: 40px;
   margin-bottom: 30px;
+  position: relative;
 }
 
-.template-item:nth-child(2n) {
-  margin-right: 0;
+.template-item::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  width: 360px;
+  height: 40px;
+  background-image: url("../img/template/browser.svg");
+  opacity: 0.12;
 }
 
 .template-title {
@@ -545,11 +549,60 @@ a {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 26px 0 12px;
+  display: inline-block;
 }
 
 .template-text {
   line-height: 18px;
   color: var(--light-gray);
+  margin: 0 auto 32px;
+  width: 255px;
+}
+
+.template-description {
+  background-color: var(--dirty-white);
+  width: 360px;
+  height: 231px;
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+  /*display: none;*/
+}
+
+.template-item:hover .template-description {
+  display: block;
+}
+
+.template-item:hover.template-item::before {
+  opacity: 1;
+}
+
+.template-item:hover .template {
+  filter: drop-shadow(0px 6px 15px rgba(0, 0, 0, 0.25));
+}
+
+.template-substrate {
+  width: 360px;
+  height: 580px;
+  background-color: #F2F2F2;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  position: relative;
+}
+
+.template-link {
+  color: var(--black);
+}
+
+.template-link:hover {
+  color: var(--light-red);
+}
+
+.template-link:active {
+  color: var(--black);
+  opacity: 0.3;
 }
 
 /* Pagination */
@@ -718,6 +771,10 @@ a {
   opacity: 1;
 }
 
+.sort-button:last-child {
+  margin-right: 0;
+}
+
 
 /*временные стили*/
 .sort-button-more,
@@ -727,14 +784,11 @@ a {
   border: 1px solid black;
 }
 
-.sort-button:last-child {
-  margin-right: 0;
-}
-
 /* Cost, buy button */
 
 .buy-button {
   border: none;
+  width: 200px;
 }
 
 .buy-button:active {
