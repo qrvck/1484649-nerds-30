@@ -2,24 +2,24 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url(../fonts/roboto.woff2) format(woff2),
-  url(../fonts/roboto.woff) format(woff);
+  src: url(../fonts/roboto.woff2) format("woff2"),
+  url(../fonts/roboto.woff) format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url(../fonts/robotobold.woff2) format(woff2),
-  url(../fonts/robotobold.woff) format(woff);
+  src: url(../fonts/robotobold.woff2) format("woff2"),
+  url(../fonts/robotobold.woff) format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url(../fonts/robotomedium.woff2) format(woff2),
-  url(../fonts/robotomedium.woff) format(woff);
+  src: url(../fonts/robotomedium.woff2) format("woff2"),
+  url(../fonts/robotomedium.woff) format("woff");
   font-weight: 500;
   font-style: normal;
 }
@@ -92,7 +92,7 @@ a {
 .container {
   width: 1160px;
   margin: 0 auto;
-  padding: 0 10;
+  padding: 0 10px;
 }
 
 /* Main header */
@@ -107,32 +107,28 @@ a {
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
+  padding-top: 49px;
 
-  display: grid;
-  grid-template-columns: 200px 1fr 200px;
+  display: flex;
+
+  justify-content: space-between;
 }
 
 .menu {
   list-style: none;
   margin: 0;
-  margin-top: 62px;
   padding: 0;
-  justify-self: center;
+
+  margin-top: 13px;
 
   display: flex;
   flex-wrap: wrap;
+
 }
+
 
 .user-navigation {
-  max-width: 200px;
-  justify-self: end;
-  margin-top: 62px;
-}
-
-.main-header-logo {
-  margin-top: 50px;
-  justify-self: start;
-  max-width: 200px;
+  margin-top: 13px;
 }
 
 .menu-link,
@@ -198,7 +194,7 @@ a {
 .slides-title {
   font-size: 55px;
   line-height: 55px;
-  font-weight: 500px;
+  font-weight: 500;
   margin: 0;
 }
 
@@ -343,6 +339,7 @@ a {
 
 .title-bar {
   background-color: var(--dirty-white);
+  margin-bottom: 55px;
 }
 
 .page-title {
@@ -350,7 +347,7 @@ a {
   line-height: 1;
   font-weight: 500;
   text-align: center;
-  padding-top: 72px;
+  padding-top: 68px;
   padding-bottom: 108px;
 }
 
@@ -379,13 +376,19 @@ a {
   color: var(--light-black);
   padding: 0;
   margin: 0;
-
 }
 
 .filter-part {
   border: none;
   padding: 0;
   margin: 0;
+}
+
+.filter-cost {
+  margin-bottom: 54px;
+
+  outline: 5px solid rgba(0, 255, 0 , 0.3);
+  outline-offset: -5px;
 }
 
 .filter-radio {
@@ -403,7 +406,6 @@ a {
 
 .filter-list label {
   position: relative;
-
 }
 
 /* radiobox */
@@ -492,11 +494,24 @@ a {
 
 /* Sort */
 
+.sort {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 48px;
+}
+
 .sort-text {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
+}
+
+.sort-buttons {
+  display: flex;
+  align-items: center;
 }
 
 /* Templates */
@@ -684,6 +699,10 @@ a {
   line-height: 18px;
   text-transform: uppercase;
   opacity: 0.3;
+  border: none;
+  padding: 0;
+  margin-right: 25px;
+  background-color: transparent;
 }
 
 .sort-button:hover {
@@ -692,6 +711,24 @@ a {
 
 .sort-button:active {
   opacity: 1;
+}
+
+.sort-button-active,
+.sort-button-active:hover {
+  opacity: 1;
+}
+
+
+/*временные стили*/
+.sort-button-more,
+.sort-button-less {
+  padding: 2px;
+  margin-right: 18px;
+  border: 1px solid black;
+}
+
+.sort-button:last-child {
+  margin-right: 0;
 }
 
 /* Cost, buy button */

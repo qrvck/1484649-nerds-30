@@ -41,7 +41,7 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
-          <fieldset class="filter-part">
+          <fieldset class="filter-part filter-cost">
             <legend class="filter-title">Стоимость:</legend>
             <input class="cost-band" type="range" name="price"><br>
             от <input class="price" type="number" name="price-from" value="0"> до <input class="price" type="number"
@@ -97,11 +97,13 @@
 
       <section class="sort">
         <p class="sort-text">Сортировать:</p>
-        <button class="sort-button" type="button">по цене</button>
-        <button class="sort-button" type="button">по типу</button>
-        <button class="sort-button" type="button">по названию</button>
-        <button class="sort-button" type="button"></button>
-        <button class="sort-button" type="button"></button>
+        <div class="sort-buttons">
+          <button class="sort-button sort-button-active" type="button">по цене</button>
+          <button class="sort-button" type="button">по типу</button>
+          <button class="sort-button" type="button">по названию</button>
+          <button class="sort-button sort-button-more sort-button-active" type="button"></button>
+          <button class="sort-button sort-button-less" type="button"></button>
+        </div>
       </section>
 
       <section>
