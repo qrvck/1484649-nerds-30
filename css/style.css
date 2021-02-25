@@ -170,10 +170,6 @@ a {
 }
 
 .on-page {
-  color: var(--black);
-  display: block;
-  padding: 13px 0;
-  margin: 0 22px;
   border-bottom: 2px solid var(--light-red);
 }
 
@@ -567,7 +563,7 @@ a {
   position: absolute;
   bottom: -1px;
   left: -1px;
-  /*display: none;*/
+  display: none;
 }
 
 .template-item:hover .template-description {
@@ -758,31 +754,45 @@ a {
   background-color: transparent;
 }
 
-.sort-button:hover {
-  opacity: 0.6;
-}
-
-.sort-button:active {
-  opacity: 1;
-}
-
-.sort-button-active,
-.sort-button-active:hover {
-  opacity: 1;
+.sort-button:nth-child(3) {
+  margin-right: 47px;
 }
 
 .sort-button:last-child {
   margin-right: 0;
 }
 
-
-/*временные стили*/
 .sort-button-more,
 .sort-button-less {
-  padding: 2px;
-  margin-right: 18px;
-  border: 1px solid black;
+  width: 11px;
+  height: 10px;
+  opacity: 0.2;
 }
+
+.sort-button-more {
+  background-image: url("../img/icon-down-dir.svg");
+  background-position: 0 0;
+  margin-right: 18px;
+}
+
+.sort-button-less {
+  background-image: url("../img/icon-up-dir.svg");
+  background-position: 0 0;
+}
+
+.sort-button:hover {
+  opacity: 0.6;
+}
+
+.sort-button:active,
+.sort-button-selected {
+  opacity: 1;
+}
+
+.sort-button.sort-button-selected {   /* правильно ли сделал?? не дает окрасить выбранную кнопку в серый цвет при наведении*/
+  opacity: 1;
+}
+
 
 /* Cost, buy button */
 
