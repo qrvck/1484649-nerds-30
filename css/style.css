@@ -95,6 +95,11 @@ a {
   padding: 0 10px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Main header */
 
 .main-header {
@@ -389,7 +394,8 @@ a {
 .filter-cost {
   margin-bottom: 54px;
 
-  
+  outline: 5px solid rgba(0, 255, 0 , 0.3);
+  outline-offset: -5px;
 }
 
 .filter-radio {
@@ -621,23 +627,43 @@ a {
 /* map */
 
 .map {
-  width: 1440px;
-  margin: 0 auto;
-}
-
-.contact-phone {
-  color: inherit;
+  position: relative;
 }
 
 .map-info-title {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+  margin: 0 0 23px;
 }
 
 .map-info-subtitle {
   line-height: 18px;
   color: var(--light-gray);
+  margin: 0 0 37px;
+}
+
+.contact-phone {
+  color: inherit;
+}
+
+.map-info {
+  width: 319px;
+  padding: 49px 50px 47px;
+  box-sizing: border-box;
+  background-color: var(--white);
+
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+}
+
+.button-write-us {
+  width: 100%;
+}
+
+.map-image {
+  width: 100%;
 }
 
 /* Main footer */
@@ -794,7 +820,7 @@ a {
   opacity: 1;
 }
 
-.sort-button.sort-button-selected {   /* правильно ли сделал?? не дает окрасить выбранную кнопку в серый цвет при наведении*/
+.sort-button:hover.sort-button-selected {   /* правильно ли сделал?? не дает окрасить выбранную кнопку в серый цвет при наведении*/
   opacity: 1;
 }
 
