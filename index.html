@@ -18,7 +18,7 @@
   <header class="main-header">
     <nav class="main-navigation container">
       <a class="main-header-logo">
-        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerd's">
+        <img class="header-logo-img" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerd's">
       </a>
       <ul class="menu">
         <li class="menu-item"><a class="menu-link on-page" href="#">Студия</a></li>
@@ -38,31 +38,30 @@
     <div class="slider-container">
       <section class="slides container">
         <ul class="slides-list">
-          <li class="slider-item">
+          <li class="slider-item slider-hidden slider-1 slide-current">
             <p class="slides-title">Долго, дорого, скрупулезно.</p>
-            <p class="slider-subtitle">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+            <p class="slider-subtitle">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
             <a href="#" class="button button-more">Узнать больше</a>
-            <img src="img/phones.png" width="760" height="431" alt="Дизайн моб приложения">
           </li>
-          <li class="slider-item slider-hidden">
+          <li class="slider-item slider-hidden slider-2">
             <p class="slides-title">Любим математику как никто другой.</p>
             <p class="slider-subtitle">Никакого креатива, только математические формулы для расчета идеальных пропорций.
             </p>
             <a href="#" class="button button-more">Узнать больше</a>
-            <img src="img/copmuters.png" width="760" height="431" alt="Компьютеры">
           </li>
-          <li class="slider-item slider-hidden">
+          <li class="slider-item slider-hidden slider-3">
             <p class="slides-title">Только ночь, только хардкор.</p>
             <p class="slider-subtitle">Работать днем, как все? Мы против этого. Ближе к полуночи работа только
               начинается.
             </p>
             <a href="#" class="button button-more">Узнать больше</a>
-            <img src="img/tablet-and-phone.png" width="760" height="431" alt="Планшет и телефон">
           </li>
         </ul>
-        <button type="button" class="button-disk"></button>
-        <button type="button" class="button-disk"></button>
-        <button type="button" class="button-disk"></button>
+        <div class="slider-controls">
+          <button type="button" class="button-disk button-disk-current" aria-label="Первый слайд"></button>
+          <button type="button" class="button-disk" aria-label="Второй слайд"></button>
+          <button type="button" class="button-disk" aria-label="Третий слайд"></button>
+        </div>
       </section>
     </div>
 

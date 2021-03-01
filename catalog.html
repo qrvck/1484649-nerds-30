@@ -18,7 +18,7 @@
   <header class="main-header">
     <nav class="main-navigation container">
       <a class="main-header-logo" href="index.html">
-        <img class="header-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerd's">
+        <img class="header-logo-img" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerd's">
       </a>
       <ul class="menu">
         <li class="menu-item"><a class="menu-link" href="index.html">Студия</a></li>
@@ -41,15 +41,14 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
-
           <fieldset class="filter-part filter-cost">
             <legend class="filter-title">Стоимость:</legend>
               <div class="range-controls">
                 <div class="scale">
-                  <div class="bar" style="width: 70%; margin-left: 0%"></div>
+                  <div class="bar" style="width: 75%; margin-left: 5%"></div>
+                  <div class="toggle toggle-min" tabindex="0" style="left: 5%"></div>
+                  <div class="toggle toggle-max" tabindex="0" style="left: 80%"></div>
                 </div>
-                <div class="toggle toggle-min" tabindex="0" style="left: 10%"></div>
-                <div class="toggle toggle-max" tabindex="0" style="left: 60%"></div>
               </div>
               <div class="price-controls">
                 <label class="min-price">
