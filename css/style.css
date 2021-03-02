@@ -680,10 +680,7 @@ img {
 }
 
 .price-controls input {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  font-weight: inherit;
+  font: inherit;
   width: 60px;
   padding: 10px;
   margin-left: 10px;
@@ -1115,14 +1112,15 @@ img {
 }
 
 .sort-button-more {
-  background-image: url("../img/icon-down-dir.svg");
+  background-image: url("../img/icon-up-down-dir.svg");
   background-position: 0 0;
   margin-right: 18px;
 }
 
 .sort-button-less {
-  background-image: url("../img/icon-up-dir.svg");
+  background-image: url("../img/icon-up-down-dir.svg");
   background-position: 0 0;
+  transform: rotate(180deg);
 }
 
 .sort-button:hover {
