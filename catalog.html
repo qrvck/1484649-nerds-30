@@ -18,7 +18,7 @@
   <header class="main-header">
     <nav class="main-navigation container">
       <a class="main-header-logo" href="index.html">
-        <img class="header-logo-img" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerd's">
+        <img class="header-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerd's">
       </a>
       <ul class="menu">
         <li class="menu-item"><a class="menu-link" href="index.html">Студия</a></li>
@@ -41,7 +41,7 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
-          
+
           <fieldset class="filter-part filter-cost">
             <legend class="filter-title">Стоимость:</legend>
               <div class="range-controls">
@@ -274,6 +274,30 @@
       </div>
     </section>
   </footer>
+
+  <div class="popup popup-active">
+    <h2 class="write-us-title">Напишите нам</h2>
+    <button type="button" class="close-popup"></button>
+    <form class="contact-form" method="GET" action="https://echo.htmlacademy.ru">
+
+        <label class="popup-label">
+          Ваше имя:<br>
+          <input type="text" class="contact-name" name="contact-name" placeholder="Имя Фамилия">
+        </label>
+
+        <label class="popup-label">
+          Ваш email:<br>
+          <input type="email" class="contact-email" name="contact-email" placeholder="email@example.com">
+        </label>
+
+        <label class="popup-label">
+          Текст письма:<br>
+          <textarea class="contact-text" name="contact-text" placeholder="В свободной форме"></textarea>
+        </label>
+
+      <button type="submit" class="button submit-button">Отправить</button>
+    </form>
+  </div>
 
 </body>
 

@@ -294,7 +294,6 @@ img {
   column-gap: 140px;
 
   margin-top: 121px;
-  position: relative;
 }
 
 .about-studio::before {
@@ -462,10 +461,23 @@ img {
 /* Popup */
 
 .popup {
+  display: none;
   width: 760px;
   padding: 63px 100px 84px;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
   background-color: var(--white);
+  position: relative;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 1706px;
+}
+
+.popup-active {
+  display: block;
 }
 
 .contact-form {
@@ -514,6 +526,18 @@ img {
   border: 2px solid #D7DCDE;
   border-radius: 3px;
   margin-top: 9px;
+}
+
+.contact-name:hover,
+.contact-email:hover,
+.contact-text:hover {
+  border: 2px solid #B4B9BB;
+}
+
+.contact-name:focus,
+.contact-email:focus,
+.contact-text:focus {
+  border: 2px solid #000000;
 }
 
 
@@ -1182,4 +1206,27 @@ img {
 
 .submit-button {
   border: none;
+  width: 259px;
 }
+
+.close-popup {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  background-image: url("../img/close-button.svg");
+  border: none;
+  background-color: transparent;
+  top: 78px;
+  right: 90px;
+  opacity: 0.3;
+}
+
+.close-popup:hover {
+  opacity: 1;
+}
+
+.close-popup:active {
+  opacity: 0.1;
+}
+
+

@@ -18,7 +18,7 @@
   <header class="main-header">
     <nav class="main-navigation container">
       <a class="main-header-logo">
-        <img class="header-logo-img" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerd's">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerd's">
       </a>
       <ul class="menu">
         <li class="menu-item"><a class="menu-link on-page" href="#">Студия</a></li>
@@ -210,23 +210,24 @@
     </section>
   </footer>
 
-  <div class="popup">
+  <div class="popup popup-active">
     <h2 class="write-us-title">Напишите нам</h2>
+    <button type="button" class="close-popup"></button>
     <form class="contact-form" method="GET" action="https://echo.htmlacademy.ru">
 
         <label class="popup-label">
           Ваше имя:<br>
-          <input type="text" class="contact-name">
+          <input type="text" class="contact-name" name="contact-name" placeholder="Имя Фамилия">
         </label>
 
         <label class="popup-label">
           Ваш email:<br>
-          <input type="email" class="contact-email">
+          <input type="email" class="contact-email" name="contact-email" placeholder="email@example.com">
         </label>
 
         <label class="popup-label">
           Текст письма:<br>
-          <textarea class="contact-text"></textarea>
+          <textarea class="contact-text" name="contact-text" placeholder="В свободной форме"></textarea>
         </label>
 
       <button type="submit" class="button submit-button">Отправить</button>
